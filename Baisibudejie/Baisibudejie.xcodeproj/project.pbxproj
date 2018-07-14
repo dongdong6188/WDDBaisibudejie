@@ -7,25 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E92C4D620F998AF00523A32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E92C4D520F998AF00523A32 /* AppDelegate.m */; };
-		3E92C4D920F998AF00523A32 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E92C4D820F998AF00523A32 /* ViewController.m */; };
-		3E92C4DC20F998AF00523A32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E92C4DA20F998AF00523A32 /* Main.storyboard */; };
+		3E22C41220FAB61A00FE895E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E22C3F720FAB61A00FE895E /* AppDelegate.m */; };
+		3E22C41320FAB61A00FE895E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E22C40D20FAB61A00FE895E /* main.m */; };
 		3E92C4DE20F998B000523A32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E92C4DD20F998B000523A32 /* Assets.xcassets */; };
 		3E92C4E120F998B000523A32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E92C4DF20F998B000523A32 /* LaunchScreen.storyboard */; };
-		3E92C4E420F998B000523A32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E92C4E320F998B000523A32 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E22C3F620FAB61A00FE895E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3E22C3F720FAB61A00FE895E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3E22C40D20FAB61A00FE895E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3E92C4D120F998AF00523A32 /* Baisibudejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baisibudejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E92C4D420F998AF00523A32 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3E92C4D520F998AF00523A32 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		3E92C4D720F998AF00523A32 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3E92C4D820F998AF00523A32 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3E92C4DB20F998AF00523A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E92C4DD20F998B000523A32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E92C4E020F998B000523A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E92C4E220F998B000523A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3E92C4E320F998B000523A32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +34,224 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E22C3F420FAB61A00FE895E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3E22C3F520FAB61A00FE895E /* AppEntry(程序) */,
+				3E22C3F820FAB61A00FE895E /* Esserce(精华) */,
+				3E22C3FC20FAB61A00FE895E /* FriendTrend(关注) */,
+				3E22C40020FAB61A00FE895E /* Main(主要) */,
+				3E22C40420FAB61A00FE895E /* Me(我) */,
+				3E22C40820FAB61A00FE895E /* New(新帖) */,
+				3E22C40C20FAB61A00FE895E /* Other(其他) */,
+				3E22C40E20FAB61A00FE895E /* Publish(发布) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3E22C3F520FAB61A00FE895E /* AppEntry(程序) */ = {
+			isa = PBXGroup;
+			children = (
+				3E22C3F620FAB61A00FE895E /* AppDelegate.h */,
+				3E22C3F720FAB61A00FE895E /* AppDelegate.m */,
+			);
+			path = "AppEntry(程序)";
+			sourceTree = "<group>";
+		};
+		3E22C3F820FAB61A00FE895E /* Esserce(精华) */ = {
+			isa = PBXGroup;
+			children = (
+				3E22C3F920FAB61A00FE895E /* Controller */,
+				3E22C3FA20FAB61A00FE895E /* Model */,
+				3E22C3FB20FAB61A00FE895E /* View */,
+			);
+			path = "Esserce(精华)";
+			sourceTree = "<group>";
+		};
+		3E22C3F920FAB61A00FE895E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3E22C3FA20FAB61A00FE895E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E22C3FB20FAB61A00FE895E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E22C3FC20FAB61A00FE895E /* FriendTrend(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				3E22C3FD20FAB61A00FE895E /* Controller */,
+				3E22C3FE20FAB61A00FE895E /* Model */,
+				3E22C3FF20FAB61A00FE895E /* View */,
+			);
+			path = "FriendTrend(关注)";
+			sourceTree = "<group>";
+		};
+		3E22C3FD20FAB61A00FE895E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3E22C3FE20FAB61A00FE895E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E22C3FF20FAB61A00FE895E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E22C40020FAB61A00FE895E /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				3E22C40120FAB61A00FE895E /* Controller */,
+				3E22C40220FAB61A00FE895E /* Model */,
+				3E22C40320FAB61A00FE895E /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		3E22C40120FAB61A00FE895E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3E22C40220FAB61A00FE895E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E22C40320FAB61A00FE895E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E22C40420FAB61A00FE895E /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				3E22C40520FAB61A00FE895E /* Controller */,
+				3E22C40620FAB61A00FE895E /* Model */,
+				3E22C40720FAB61A00FE895E /* View */,
+			);
+			path = "Me(我)";
+			sourceTree = "<group>";
+		};
+		3E22C40520FAB61A00FE895E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3E22C40620FAB61A00FE895E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E22C40720FAB61A00FE895E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E22C40820FAB61A00FE895E /* New(新帖) */ = {
+			isa = PBXGroup;
+			children = (
+				3E22C40920FAB61A00FE895E /* Controller */,
+				3E22C40A20FAB61A00FE895E /* Model */,
+				3E22C40B20FAB61A00FE895E /* View */,
+			);
+			path = "New(新帖)";
+			sourceTree = "<group>";
+		};
+		3E22C40920FAB61A00FE895E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3E22C40A20FAB61A00FE895E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E22C40B20FAB61A00FE895E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E22C40C20FAB61A00FE895E /* Other(其他) */ = {
+			isa = PBXGroup;
+			children = (
+				3E22C40D20FAB61A00FE895E /* main.m */,
+			);
+			path = "Other(其他)";
+			sourceTree = "<group>";
+		};
+		3E22C40E20FAB61A00FE895E /* Publish(发布) */ = {
+			isa = PBXGroup;
+			children = (
+				3E22C40F20FAB61A00FE895E /* Controller */,
+				3E22C41020FAB61A00FE895E /* Model */,
+				3E22C41120FAB61A00FE895E /* View */,
+			);
+			path = "Publish(发布)";
+			sourceTree = "<group>";
+		};
+		3E22C40F20FAB61A00FE895E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3E22C41020FAB61A00FE895E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E22C41120FAB61A00FE895E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3E92C4C820F998AF00523A32 = {
 			isa = PBXGroup;
 			children = (
@@ -58,15 +271,10 @@
 		3E92C4D320F998AF00523A32 /* Baisibudejie */ = {
 			isa = PBXGroup;
 			children = (
-				3E92C4D420F998AF00523A32 /* AppDelegate.h */,
-				3E92C4D520F998AF00523A32 /* AppDelegate.m */,
-				3E92C4D720F998AF00523A32 /* ViewController.h */,
-				3E92C4D820F998AF00523A32 /* ViewController.m */,
-				3E92C4DA20F998AF00523A32 /* Main.storyboard */,
+				3E22C3F420FAB61A00FE895E /* Classes */,
 				3E92C4DD20F998B000523A32 /* Assets.xcassets */,
 				3E92C4DF20F998B000523A32 /* LaunchScreen.storyboard */,
 				3E92C4E220F998B000523A32 /* Info.plist */,
-				3E92C4E320F998B000523A32 /* main.m */,
 			);
 			path = Baisibudejie;
 			sourceTree = "<group>";
@@ -130,7 +338,6 @@
 			files = (
 				3E92C4E120F998B000523A32 /* LaunchScreen.storyboard in Resources */,
 				3E92C4DE20F998B000523A32 /* Assets.xcassets in Resources */,
-				3E92C4DC20F998AF00523A32 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,23 +348,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E92C4D920F998AF00523A32 /* ViewController.m in Sources */,
-				3E92C4E420F998B000523A32 /* main.m in Sources */,
-				3E92C4D620F998AF00523A32 /* AppDelegate.m in Sources */,
+				3E22C41320FAB61A00FE895E /* main.m in Sources */,
+				3E22C41220FAB61A00FE895E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3E92C4DA20F998AF00523A32 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E92C4DB20F998AF00523A32 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3E92C4DF20F998B000523A32 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
