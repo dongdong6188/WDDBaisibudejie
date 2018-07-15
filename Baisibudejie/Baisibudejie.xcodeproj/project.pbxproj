@@ -15,6 +15,7 @@
 		3E22C41F20FAC01900FE895E /* WDDNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E22C41E20FAC01900FE895E /* WDDNewViewController.m */; };
 		3E22C42220FAC03800FE895E /* WDDPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E22C42120FAC03800FE895E /* WDDPublishViewController.m */; };
 		3E22C42520FAC08800FE895E /* WDDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E22C42420FAC08800FE895E /* WDDTabBarViewController.m */; };
+		3E22C42920FAF0F500FE895E /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E22C42720FAF0F500FE895E /* UIImage+image.m */; };
 		3E92C4DE20F998B000523A32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E92C4DD20F998B000523A32 /* Assets.xcassets */; };
 		3E92C4E120F998B000523A32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E92C4DF20F998B000523A32 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -35,6 +36,8 @@
 		3E22C42120FAC03800FE895E /* WDDPublishViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDDPublishViewController.m; sourceTree = "<group>"; };
 		3E22C42320FAC08800FE895E /* WDDTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDDTabBarViewController.h; sourceTree = "<group>"; };
 		3E22C42420FAC08800FE895E /* WDDTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDDTabBarViewController.m; sourceTree = "<group>"; };
+		3E22C42720FAF0F500FE895E /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
+		3E22C42820FAF0F500FE895E /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
 		3E92C4D120F998AF00523A32 /* Baisibudejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baisibudejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E92C4DD20F998B000523A32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E92C4E020F998B000523A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,13 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				3E22C3F520FAB61A00FE895E /* AppEntry(程序) */,
-				3E22C3F820FAB61A00FE895E /* Esserce(精华) */,
-				3E22C3FC20FAB61A00FE895E /* FriendTrend(关注) */,
 				3E22C40020FAB61A00FE895E /* Main(主要) */,
-				3E22C40420FAB61A00FE895E /* Me(我) */,
+				3E22C3F820FAB61A00FE895E /* Esserce(精华) */,
 				3E22C40820FAB61A00FE895E /* New(新帖) */,
-				3E22C40C20FAB61A00FE895E /* Other(其他) */,
 				3E22C40E20FAB61A00FE895E /* Publish(发布) */,
+				3E22C3FC20FAB61A00FE895E /* FriendTrend(关注) */,
+				3E22C40420FAB61A00FE895E /* Me(我) */,
+				3E22C40C20FAB61A00FE895E /* Other(其他) */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 		3E22C40C20FAB61A00FE895E /* Other(其他) */ = {
 			isa = PBXGroup;
 			children = (
+				3E22C42620FAF0EB00FE895E /* Category */,
 				3E22C40D20FAB61A00FE895E /* main.m */,
 			);
 			path = "Other(其他)";
@@ -280,6 +284,15 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3E22C42620FAF0EB00FE895E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3E22C42820FAF0F500FE895E /* UIImage+image.h */,
+				3E22C42720FAF0F500FE895E /* UIImage+image.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		3E92C4C820F998AF00523A32 = {
@@ -386,6 +399,7 @@
 				3E22C41F20FAC01900FE895E /* WDDNewViewController.m in Sources */,
 				3E22C42520FAC08800FE895E /* WDDTabBarViewController.m in Sources */,
 				3E22C42220FAC03800FE895E /* WDDPublishViewController.m in Sources */,
+				3E22C42920FAF0F500FE895E /* UIImage+image.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
