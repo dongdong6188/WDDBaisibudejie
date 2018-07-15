@@ -15,11 +15,35 @@
 #import "UIImage+image.h"
 
 @interface WDDTabBarViewController ()
-
+@property(nonatomic,weak)UIButton *plusBtn;
 @end
 
 @implementation WDDTabBarViewController
+//懒加载创建中间的按钮
+-(UIButton *)plusBtn
+{
+    if (_plusBtn==nil) {
+        UIButton *plusBtn=[[UIButton alloc]init];
+        _plusBtn=plusBtn;
+        //放到外面设置BTN的位置
+       // plusBtn.center=CGPointMake(self.tabBar.bounds.size.width*0.5, self.tabBar.bounds.size.height*0.5);
+        [plusBtn setImage:[UIImage imageNamed: @"tabBar_publish_icon"] forState:UIControlStateNormal];
+        [plusBtn setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
+        //自适应
+        [plusBtn sizeToFit];
+        [self.tabBar addSubview:plusBtn];
+        
+    }
+    return _plusBtn;
+}
+
+//第一次使用当前类或者子类时调用
+//可以调用多次
+//+ (void)initialize
+
 //设置tabbar字体大小和颜色
+//程序已启动时就会把类加载到内存
+//只会调用一次
 + (void)load{
     UITabBarItem *item = [UITabBarItem appearanceWhenContainedIn:self, nil];
     
@@ -34,10 +58,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.plusBtn.center=CGPointMake(self.tabBar.bounds.size.width*0.5, self.tabBar.bounds.size.height*0.5);
     //使用这种方法一样可以设置字体的颜色
     //self.tabBar.tintColor=[UIColor blackColor];
     //[self setupAllTabbarButtonItem];
     [self addAllChildViewController];
+    [self.tabBar setBackgroundImage:[UIImage imageNamed:@"tabbar-light"]];
 }
 //设置子控制器按钮内容
 //-(void)setupAllTabbarButtonItem
@@ -71,11 +97,14 @@
     nav2.tabBarItem.selectedImage=[UIImage imageOriginalWithName:@"tabBar_new_click_icon"];
     
     //发布
+    //占位控制器
     WDDPublishViewController *vc3=[[WDDPublishViewController alloc]init];
-    vc3.view.backgroundColor=[UIColor yellowColor];
+   // vc3.view.backgroundColor=[UIColor yellowColor];
     [self addChildViewController:vc3];
-    vc3.tabBarItem.image=[UIImage imageOriginalWithName:@"tabBar_publish_icon"];
-    vc3.tabBarItem.selectedImage=[UIImage imageOriginalWithName:@"tabBar_publish_click_icon"];
+    //设置tabbar 中间的按钮不可以点击
+    vc3.tabBarItem.enabled=NO;
+//    vc3.tabBarItem.image=[UIImage imageOriginalWithName:@"tabBar_publish_icon"];
+//    vc3.tabBarItem.selectedImage=[UIImage imageOriginalWithName:@"tabBar_publish_click_icon"];
 
     
     //关注
