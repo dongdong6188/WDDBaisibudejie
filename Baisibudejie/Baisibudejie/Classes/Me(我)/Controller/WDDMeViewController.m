@@ -7,7 +7,7 @@
 //
 
 #import "WDDMeViewController.h"
-
+#import "UIBarButtonItem+item.h"
 @interface WDDMeViewController ()
 
 @end
@@ -16,12 +16,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setNavBarTittleAndButton];
+}
+-(void)setNavBarTittleAndButton
+{
+    self.navigationItem.title=@"我";
+//    self.navigationItem.rightBarButtonItem=[UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-setting-icon-click"] highImage:
+//    [UIImage imageNamed:@"mine-setting-icon"]  addTaget:self action:@selector(settingBtnClick)];
+    UIBarButtonItem *settingItem =  [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-setting-icon-click"] highImage:[UIImage imageNamed:@"mine-setting-icon"] addTaget:self action:@selector(settingBtnClick)];
+    UIBarButtonItem *nightItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-moon-icon"] highImage:[UIImage imageNamed:@"mine-moon-icon-click"]  addTaget:self action:@selector(moonClick)];
+    //要想右侧添加两个或者以上按钮必须使用数组挨个添加不然会覆盖
+    self.navigationItem.rightBarButtonItems = @[settingItem,nightItem];
+   
+
+}
+-(void)moonClick
+{
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+}
+-(void)settingBtnClick
+{
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {

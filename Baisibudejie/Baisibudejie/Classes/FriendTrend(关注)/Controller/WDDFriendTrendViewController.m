@@ -7,7 +7,7 @@
 //
 
 #import "WDDFriendTrendViewController.h"
-
+#import "UIBarButtonItem+item.h"
 @interface WDDFriendTrendViewController ()
 
 @end
@@ -16,7 +16,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setNavBarTittleAndButton];
+}
+-(void)setNavBarTittleAndButton
+{
+    self.navigationItem.title=@"我的关注";
+    self.navigationItem.leftBarButtonItem=[UIBarButtonItem itemWithImage:[UIImage imageNamed:@"friendsRecommentIcon-click"] highImage:[UIImage imageNamed:@"friendsRecommentIcon"]  addTaget:self action:@selector(contentBtnClick)];
+}
+-(void)contentBtnClick
+{
+    
 }
 
 - (void)didReceiveMemoryWarning {

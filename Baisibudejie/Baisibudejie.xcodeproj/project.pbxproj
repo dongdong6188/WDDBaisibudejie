@@ -16,6 +16,7 @@
 		3E22C42220FAC03800FE895E /* WDDPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E22C42120FAC03800FE895E /* WDDPublishViewController.m */; };
 		3E22C42520FAC08800FE895E /* WDDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E22C42420FAC08800FE895E /* WDDTabBarViewController.m */; };
 		3E22C42920FAF0F500FE895E /* UIImage+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E22C42720FAF0F500FE895E /* UIImage+image.m */; };
+		3E22C42C20FC2F7F00FE895E /* UIBarButtonItem+item.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E22C42B20FC2F7F00FE895E /* UIBarButtonItem+item.m */; };
 		3E92C4DE20F998B000523A32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E92C4DD20F998B000523A32 /* Assets.xcassets */; };
 		3E92C4E120F998B000523A32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E92C4DF20F998B000523A32 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,8 @@
 		3E22C42420FAC08800FE895E /* WDDTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDDTabBarViewController.m; sourceTree = "<group>"; };
 		3E22C42720FAF0F500FE895E /* UIImage+image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+image.m"; sourceTree = "<group>"; };
 		3E22C42820FAF0F500FE895E /* UIImage+image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+image.h"; sourceTree = "<group>"; };
+		3E22C42A20FC2F7F00FE895E /* UIBarButtonItem+item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+item.h"; sourceTree = "<group>"; };
+		3E22C42B20FC2F7F00FE895E /* UIBarButtonItem+item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+item.m"; sourceTree = "<group>"; };
 		3E92C4D120F998AF00523A32 /* Baisibudejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baisibudejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E92C4DD20F998B000523A32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E92C4E020F998B000523A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -289,6 +292,8 @@
 		3E22C42620FAF0EB00FE895E /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				3E22C42A20FC2F7F00FE895E /* UIBarButtonItem+item.h */,
+				3E22C42B20FC2F7F00FE895E /* UIBarButtonItem+item.m */,
 				3E22C42820FAF0F500FE895E /* UIImage+image.h */,
 				3E22C42720FAF0F500FE895E /* UIImage+image.m */,
 			);
@@ -394,6 +399,7 @@
 				3E22C41920FABFB100FE895E /* WDDFriendTrendViewController.m in Sources */,
 				3E22C41320FAB61A00FE895E /* main.m in Sources */,
 				3E22C41220FAB61A00FE895E /* AppDelegate.m in Sources */,
+				3E22C42C20FC2F7F00FE895E /* UIBarButtonItem+item.m in Sources */,
 				3E22C41C20FABFF100FE895E /* WDDMeViewController.m in Sources */,
 				3E22C41620FABF3E00FE895E /* WDDEssenceViewController.m in Sources */,
 				3E22C41F20FAC01900FE895E /* WDDNewViewController.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "WDDNewViewController.h"
+#import "UIBarButtonItem+item.h"
 
 @interface WDDNewViewController ()
 
@@ -16,9 +17,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setNavBarTittleAndButton];
 }
-
+-(void)setNavBarTittleAndButton
+{
+    self.navigationItem.titleView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"MainTitle"]];
+    self.navigationItem.leftBarButtonItem=[UIBarButtonItem itemWithImage:[UIImage imageNamed:@"MainTagSubIconClick"] highImage:[UIImage imageNamed:@"MainTagSubIcon"]  addTaget:self action:@selector(checkBtnClick)];
+    self.navigationItem.rightBarButtonItem=[UIBarButtonItem itemWithImage:[UIImage imageNamed:@"search-search-icon"] highImage:[UIImage imageNamed:@"search-search-icon"] addTaget:self action:@selector(searchBtnClick)];
+}
+-(void)checkBtnClick
+{
+    
+}
+-(void)searchBtnClick
+{
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
