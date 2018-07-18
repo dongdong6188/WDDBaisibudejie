@@ -1,49 +1,41 @@
 //
-//  WDDMeViewController.m
+//  WDDSettingController.m
 //  Baisibudejie
 //
-//  Created by 仵懂懂 on 2018/7/15.
+//  Created by 仵懂懂 on 2018/7/16.
 //  Copyright © 2018年 仵懂懂. All rights reserved.
 //
 
-#import "WDDMeViewController.h"
-#import "UIBarButtonItem+item.h"
 #import "WDDSettingController.h"
-@interface WDDMeViewController ()
+
+@interface WDDSettingController ()
 
 @end
 
-@implementation WDDMeViewController
+@implementation WDDSettingController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setNavBarTittleAndButton];
-}
--(void)setNavBarTittleAndButton
-{
-    self.navigationItem.title=@"我";
-//    self.navigationItem.rightBarButtonItem=[UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-setting-icon-click"] highImage:
-//    [UIImage imageNamed:@"mine-setting-icon"]  addTaget:self action:@selector(settingBtnClick)];
-    UIBarButtonItem *settingItem =  [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-setting-icon-click"] highImage:[UIImage imageNamed:@"mine-setting-icon"] addTaget:self action:@selector(settingBtnClick)];
-    UIBarButtonItem *nightItem = [UIBarButtonItem itemWithImage:[UIImage imageNamed:@"mine-moon-icon"] highImage:[UIImage imageNamed:@"mine-moon-icon-click"]  addTaget:self action:@selector(moonClick)];
-    //要想右侧添加两个或者以上按钮必须使用数组挨个添加不然会覆盖
-    self.navigationItem.rightBarButtonItems = @[settingItem,nightItem];
-   
-
-}
--(void)moonClick
-{
+    [self setUpNavBar];
     
 }
--(void)settingBtnClick
+-(void)setUpNavBar
 {
-    WDDSettingController *setVc=[[WDDSettingController alloc]init];
-    //在push之前隐藏tabbar
-    setVc.hidesBottomBarWhenPushed=YES;
-    [self.navigationController pushViewController:setVc animated:YES];
+    UIButton *backBtn=[UIButton buttonWithType:UIButtonTypeCustom];
+    [backBtn setTitle:@"返回" forState:UIControlStateNormal];
+    [backBtn  setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [backBtn setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
+    [backBtn setImage:[UIImage imageNamed:@"capture_nav_back_normal"] forState:UIControlStateNormal];
+    [backBtn setImage:[UIImage imageNamed:@"capture_nav_back_highlight"] forState:UIControlStateHighlighted];
+    [backBtn sizeToFit];
+    [backBtn addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithCustomView:backBtn];
     
 }
-
+-(void)backClick
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
