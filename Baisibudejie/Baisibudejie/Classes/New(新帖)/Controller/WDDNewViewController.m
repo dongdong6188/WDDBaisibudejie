@@ -8,6 +8,7 @@
 
 #import "WDDNewViewController.h"
 #import "UIBarButtonItem+item.h"
+#import "WDDSubTagController.h"
 
 @interface WDDNewViewController ()
 
@@ -27,7 +28,8 @@
 }
 -(void)checkBtnClick
 {
-    
+    WDDSubTagController *subTagVc=[[WDDSubTagController alloc]init];
+    [self.navigationController pushViewController:subTagVc animated:YES];
 }
 -(void)searchBtnClick
 {
