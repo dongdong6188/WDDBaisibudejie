@@ -10,5 +10,6 @@
 
 @interface UIImage (image)
 + (UIImage *)imageOriginalWithName:(NSString *)imageName;
-
++ (UIImage *)WDD_circleImageNamed:(NSString *)name;
+- (UIImage *)circleImage;
 @end

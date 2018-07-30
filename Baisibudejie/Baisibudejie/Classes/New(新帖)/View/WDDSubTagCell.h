@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class WDDSubTagItem;
 @interface WDDSubTagCell : UITableViewCell
-
+@property(nonatomic,strong)WDDSubTagItem *item;
 @end

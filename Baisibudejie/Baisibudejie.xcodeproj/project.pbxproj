@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		3E078F752105D1C2001E6A04 /* WDDSubTagController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E078F742105D1C2001E6A04 /* WDDSubTagController.m */; };
 		3E078F792105EEDD001E6A04 /* WDDSubTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E078F772105EEDD001E6A04 /* WDDSubTagCell.m */; };
-		3E078F7A2105EEDD001E6A04 /* WDDSubTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E078F782105EEDD001E6A04 /* WDDSubTagCell.xib */; };
 		3E22C41220FAB61A00FE895E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E22C3F720FAB61A00FE895E /* AppDelegate.m */; };
 		3E22C41320FAB61A00FE895E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E22C40D20FAB61A00FE895E /* main.m */; };
 		3E22C41620FABF3E00FE895E /* WDDEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E22C41520FABF3E00FE895E /* WDDEssenceViewController.m */; };
@@ -32,19 +31,18 @@
 		3E295204210C388D0089212B /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2951FD210C388D0089212B /* LaunchImage-800-Portrait-736h@3x.png */; };
 		3E295205210C388D0089212B /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2951FE210C388D0089212B /* LaunchImage.png */; };
 		3E295206210C388D0089212B /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2951FF210C388D0089212B /* LaunchImage@2x.png */; };
-		3E92C4DE20F998B000523A32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E92C4DD20F998B000523A32 /* Assets.xcassets */; };
+		3E295209210C3DA00089212B /* WDDSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E295208210C3DA00089212B /* WDDSubTagItem.m */; };
+		3E7A0994210F2A5F008A5823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7A0993210F2A5E008A5823 /* Assets.xcassets */; };
 		3E92C4E120F998B000523A32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E92C4DF20F998B000523A32 /* LaunchScreen.storyboard */; };
-		E83869AD0B4780D69EDFEEC9 /* libPods-Baisibudejie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BE446F9B49F18B4040513E1 /* libPods-Baisibudejie.a */; };
+		3ED5D0FA210D6D4F00990EE6 /* WDDSubTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ED5D0F9210D6D4F00990EE6 /* WDDSubTagCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0BE446F9B49F18B4040513E1 /* libPods-Baisibudejie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Baisibudejie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB8B50E796AF10A098D5DCF /* Pods-Baisibudejie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisibudejie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Baisibudejie/Pods-Baisibudejie.release.xcconfig"; sourceTree = "<group>"; };
 		3E078F732105D1C2001E6A04 /* WDDSubTagController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDDSubTagController.h; sourceTree = "<group>"; };
 		3E078F742105D1C2001E6A04 /* WDDSubTagController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDDSubTagController.m; sourceTree = "<group>"; };
 		3E078F762105EEDD001E6A04 /* WDDSubTagCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDDSubTagCell.h; sourceTree = "<group>"; };
 		3E078F772105EEDD001E6A04 /* WDDSubTagCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDDSubTagCell.m; sourceTree = "<group>"; };
-		3E078F782105EEDD001E6A04 /* WDDSubTagCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WDDSubTagCell.xib; sourceTree = "<group>"; };
 		3E22C3F620FAB61A00FE895E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E22C3F720FAB61A00FE895E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3E22C40D20FAB61A00FE895E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -80,10 +78,13 @@
 		3E2951FD210C388D0089212B /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
 		3E2951FE210C388D0089212B /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
 		3E2951FF210C388D0089212B /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
+		3E295207210C3DA00089212B /* WDDSubTagItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDDSubTagItem.h; sourceTree = "<group>"; };
+		3E295208210C3DA00089212B /* WDDSubTagItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDDSubTagItem.m; sourceTree = "<group>"; };
+		3E7A0993210F2A5E008A5823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E92C4D120F998AF00523A32 /* Baisibudejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baisibudejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E92C4DD20F998B000523A32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E92C4E020F998B000523A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E92C4E220F998B000523A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ED5D0F9210D6D4F00990EE6 /* WDDSubTagCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WDDSubTagCell.xib; sourceTree = "<group>"; };
 		B3F303D50102375494F1A4F5 /* Pods-Baisibudejie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisibudejie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Baisibudejie/Pods-Baisibudejie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,7 +93,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E83869AD0B4780D69EDFEEC9 /* libPods-Baisibudejie.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +283,8 @@
 		3E22C40A20FAB61A00FE895E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3E295207210C3DA00089212B /* WDDSubTagItem.h */,
+				3E295208210C3DA00089212B /* WDDSubTagItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,7 +294,7 @@
 			children = (
 				3E078F762105EEDD001E6A04 /* WDDSubTagCell.h */,
 				3E078F772105EEDD001E6A04 /* WDDSubTagCell.m */,
-				3E078F782105EEDD001E6A04 /* WDDSubTagCell.xib */,
+				3ED5D0F9210D6D4F00990EE6 /* WDDSubTagCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -456,9 +458,9 @@
 			isa = PBXGroup;
 			children = (
 				3E22C3F420FAB61A00FE895E /* Classes */,
-				3E92C4DD20F998B000523A32 /* Assets.xcassets */,
 				3E92C4DF20F998B000523A32 /* LaunchScreen.storyboard */,
 				3E92C4E220F998B000523A32 /* Info.plist */,
+				3E7A0993210F2A5E008A5823 /* Assets.xcassets */,
 			);
 			path = Baisibudejie;
 			sourceTree = "<group>";
@@ -475,7 +477,6 @@
 		C6F59788D4DBB345A2881319 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0BE446F9B49F18B4040513E1 /* libPods-Baisibudejie.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -491,6 +492,7 @@
 				3E92C4CD20F998AF00523A32 /* Sources */,
 				3E92C4CE20F998AF00523A32 /* Frameworks */,
 				3E92C4CF20F998AF00523A32 /* Resources */,
+				7E906E578A8CD40D72444A81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -546,15 +548,33 @@
 				3E295203210C388D0089212B /* LaunchImage-800-667h@2x.png in Resources */,
 				3E295200210C388D0089212B /* LaunchImage-568h@2x.png in Resources */,
 				3E295205210C388D0089212B /* LaunchImage.png in Resources */,
-				3E92C4DE20F998B000523A32 /* Assets.xcassets in Resources */,
 				3E295202210C388D0089212B /* LaunchImage-700@2x.png in Resources */,
-				3E078F7A2105EEDD001E6A04 /* WDDSubTagCell.xib in Resources */,
+				3E7A0994210F2A5F008A5823 /* Assets.xcassets in Resources */,
+				3ED5D0FA210D6D4F00990EE6 /* WDDSubTagCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7E906E578A8CD40D72444A81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Baisibudejie/Pods-Baisibudejie-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Baisibudejie/Pods-Baisibudejie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B7E9AA049F834C5917AB1E49 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -594,6 +614,7 @@
 				3E22C42220FAC03800FE895E /* WDDPublishViewController.m in Sources */,
 				3E078F792105EEDD001E6A04 /* WDDSubTagCell.m in Sources */,
 				3E2951F3210C34BE0089212B /* WDDAdController.m in Sources */,
+				3E295209210C3DA00089212B /* WDDSubTagItem.m in Sources */,
 				3E22C42920FAF0F500FE895E /* UIImage+image.m in Sources */,
 				3E2951F7210C37200089212B /* WDDAdMode.m in Sources */,
 			);
