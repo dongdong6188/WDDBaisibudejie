@@ -8,15 +8,30 @@
 
 #import "WDDFriendTrendViewController.h"
 #import "UIBarButtonItem+item.h"
+#import "WDDLoginRegisterViewController.h"
+#import "UITextField+Placeholder.h"
 @interface WDDFriendTrendViewController ()
-
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 @end
 
 @implementation WDDFriendTrendViewController
-
+// 进入到登录注册界面
+- (IBAction)loginRegister {
+    // 登录注册控制器
+    WDDLoginRegisterViewController *loginVc = [[WDDLoginRegisterViewController alloc] init];
+    // modal
+    [self presentViewController:loginVc animated:YES completion:nil];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNavBarTittleAndButton];
+    // 设置占位文字颜色
+    _textField.placeholderColor = [UIColor yellowColor];
+    
+    // 设置占位文字
+    // placeholder:设置占位文字,设置文字颜色
+    _textField.placeholder = @"123123";
+
 }
 -(void)setNavBarTittleAndButton
 {

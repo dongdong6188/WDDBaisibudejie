@@ -9,8 +9,17 @@
 #import "WDDMeViewController.h"
 #import "UIBarButtonItem+item.h"
 #import "WDDSettingController.h"
-@interface WDDMeViewController ()
+#import "WDDCollectionCell.h"
 
+static NSString *const ID=@"collectionCell";
+static NSInteger const cols = 4;
+static CGFloat const margin = 1;
+#define WDDScreenH [UIScreen mainScreen].bounds.size.height
+#define WDDScreenW [UIScreen mainScreen].bounds.size.width
+#define itemWH (WDDScreenW - ((cols - 1) * margin)) / cols
+
+@interface WDDMeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@property (nonatomic, weak) UICollectionView *collectionView;
 @end
 
 @implementation WDDMeViewController
@@ -18,6 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNavBarTittleAndButton];
+     [self setUpFooterView];
 }
 -(void)setNavBarTittleAndButton
 {
@@ -31,6 +41,39 @@
    
 
 }
+-(void)setUpFooterView
+{
+    UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc]init];
+    layout.itemSize=CGSizeMake(itemWH, itemWH);
+    layout.minimumInteritemSpacing = margin;
+    layout.minimumLineSpacing = margin;
+    
+    UICollectionView *collectionView=[[UICollectionView alloc]initWithFrame:CGRectMake(0, 0, 0, 0) collectionViewLayout:layout];
+    _collectionView=collectionView;
+    self.tableView.tableFooterView=collectionView;
+    collectionView.delegate=self;
+    collectionView.dataSource=self;
+    [collectionView registerNib:[UINib nibWithNibName:@"WDDCollectionCell" bundle:nil] forCellWithReuseIdentifier:ID];
+    
+}
+#pragma markcollectionView的代理方法
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 4;
+}
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return 4;
+}
+- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+
+    WDDCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
+    
+    
+    return cell;
+}
+
 -(void)moonClick
 {
     
@@ -52,67 +95,11 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return 1;
 }
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -33,7 +33,21 @@
 		3E295206210C388D0089212B /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2951FF210C388D0089212B /* LaunchImage@2x.png */; };
 		3E295209210C3DA00089212B /* WDDSubTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E295208210C3DA00089212B /* WDDSubTagItem.m */; };
 		3E7A0994210F2A5F008A5823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7A0993210F2A5E008A5823 /* Assets.xcassets */; };
+		3E7A0996210F2E5B008A5823 /* WDDFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E7A0995210F2E5B008A5823 /* WDDFriendTrendViewController.xib */; };
+		3E7A099A210F3B7A008A5823 /* WDDLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A0998210F3B79008A5823 /* WDDLoginRegisterViewController.m */; };
+		3E7A099B210F3B7A008A5823 /* WDDLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E7A0999210F3B7A008A5823 /* WDDLoginRegisterViewController.xib */; };
+		3E7A09A6210F3BA0008A5823 /* WDDFastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E7A099E210F3B9E008A5823 /* WDDFastLoginView.xib */; };
+		3E7A09A7210F3BA0008A5823 /* WDDLoginRegisterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A099F210F3B9E008A5823 /* WDDLoginRegisterView.m */; };
+		3E7A09A8210F3BA0008A5823 /* WDDLoginTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A09A0210F3B9E008A5823 /* WDDLoginTextField.m */; };
+		3E7A09A9210F3BA0008A5823 /* WDDLoginRegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E7A09A2210F3B9F008A5823 /* WDDLoginRegisterView.xib */; };
+		3E7A09AA210F3BA0008A5823 /* WDDFastLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A09A3210F3B9F008A5823 /* WDDFastLoginButton.m */; };
+		3E7A09AB210F3BA0008A5823 /* WDDFastLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A09A5210F3BA0008A5823 /* WDDFastLoginView.m */; };
+		3E7A09AE210F3D5C008A5823 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A09AD210F3D5C008A5823 /* UIView+Frame.m */; };
+		3E80771F21114AE700831D53 /* WDDMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E80771E21114AE700831D53 /* WDDMeViewController.storyboard */; };
+		3E8077232111587E00831D53 /* WDDCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8077212111587E00831D53 /* WDDCollectionCell.m */; };
+		3E8077242111587E00831D53 /* WDDCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E8077222111587E00831D53 /* WDDCollectionCell.xib */; };
 		3E92C4E120F998B000523A32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E92C4DF20F998B000523A32 /* LaunchScreen.storyboard */; };
+		3EC932032110087A00A15590 /* UITextField+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC932012110087A00A15590 /* UITextField+Placeholder.m */; };
 		3ED5D0FA210D6D4F00990EE6 /* WDDSubTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ED5D0F9210D6D4F00990EE6 /* WDDSubTagCell.xib */; };
 /* End PBXBuildFile section */
 
@@ -81,9 +95,31 @@
 		3E295207210C3DA00089212B /* WDDSubTagItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDDSubTagItem.h; sourceTree = "<group>"; };
 		3E295208210C3DA00089212B /* WDDSubTagItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDDSubTagItem.m; sourceTree = "<group>"; };
 		3E7A0993210F2A5E008A5823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E7A0995210F2E5B008A5823 /* WDDFriendTrendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WDDFriendTrendViewController.xib; sourceTree = "<group>"; };
+		3E7A0997210F3B79008A5823 /* WDDLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDLoginRegisterViewController.h; sourceTree = "<group>"; };
+		3E7A0998210F3B79008A5823 /* WDDLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDLoginRegisterViewController.m; sourceTree = "<group>"; };
+		3E7A0999210F3B7A008A5823 /* WDDLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WDDLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		3E7A099C210F3B9D008A5823 /* WDDLoginTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDLoginTextField.h; sourceTree = "<group>"; };
+		3E7A099D210F3B9E008A5823 /* WDDFastLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDFastLoginView.h; sourceTree = "<group>"; };
+		3E7A099E210F3B9E008A5823 /* WDDFastLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WDDFastLoginView.xib; sourceTree = "<group>"; };
+		3E7A099F210F3B9E008A5823 /* WDDLoginRegisterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDLoginRegisterView.m; sourceTree = "<group>"; };
+		3E7A09A0210F3B9E008A5823 /* WDDLoginTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDLoginTextField.m; sourceTree = "<group>"; };
+		3E7A09A1210F3B9F008A5823 /* WDDLoginRegisterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDLoginRegisterView.h; sourceTree = "<group>"; };
+		3E7A09A2210F3B9F008A5823 /* WDDLoginRegisterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WDDLoginRegisterView.xib; sourceTree = "<group>"; };
+		3E7A09A3210F3B9F008A5823 /* WDDFastLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDFastLoginButton.m; sourceTree = "<group>"; };
+		3E7A09A4210F3B9F008A5823 /* WDDFastLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDFastLoginButton.h; sourceTree = "<group>"; };
+		3E7A09A5210F3BA0008A5823 /* WDDFastLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDFastLoginView.m; sourceTree = "<group>"; };
+		3E7A09AC210F3D5C008A5823 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		3E7A09AD210F3D5C008A5823 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		3E80771E21114AE700831D53 /* WDDMeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WDDMeViewController.storyboard; sourceTree = "<group>"; };
+		3E8077202111587E00831D53 /* WDDCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDDCollectionCell.h; sourceTree = "<group>"; };
+		3E8077212111587E00831D53 /* WDDCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDDCollectionCell.m; sourceTree = "<group>"; };
+		3E8077222111587E00831D53 /* WDDCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WDDCollectionCell.xib; sourceTree = "<group>"; };
 		3E92C4D120F998AF00523A32 /* Baisibudejie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baisibudejie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E92C4E020F998B000523A32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E92C4E220F998B000523A32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EC932002110087900A15590 /* UITextField+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Placeholder.h"; sourceTree = "<group>"; };
+		3EC932012110087A00A15590 /* UITextField+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Placeholder.m"; sourceTree = "<group>"; };
 		3ED5D0F9210D6D4F00990EE6 /* WDDSubTagCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WDDSubTagCell.xib; sourceTree = "<group>"; };
 		B3F303D50102375494F1A4F5 /* Pods-Baisibudejie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisibudejie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Baisibudejie/Pods-Baisibudejie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,6 +209,10 @@
 			children = (
 				3E22C41720FABFB100FE895E /* WDDFriendTrendViewController.h */,
 				3E22C41820FABFB100FE895E /* WDDFriendTrendViewController.m */,
+				3E7A0995210F2E5B008A5823 /* WDDFriendTrendViewController.xib */,
+				3E7A0997210F3B79008A5823 /* WDDLoginRegisterViewController.h */,
+				3E7A0998210F3B79008A5823 /* WDDLoginRegisterViewController.m */,
+				3E7A0999210F3B7A008A5823 /* WDDLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,6 +227,16 @@
 		3E22C3FF20FAB61A00FE895E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3E7A09A4210F3B9F008A5823 /* WDDFastLoginButton.h */,
+				3E7A09A3210F3B9F008A5823 /* WDDFastLoginButton.m */,
+				3E7A099D210F3B9E008A5823 /* WDDFastLoginView.h */,
+				3E7A09A5210F3BA0008A5823 /* WDDFastLoginView.m */,
+				3E7A099E210F3B9E008A5823 /* WDDFastLoginView.xib */,
+				3E7A09A1210F3B9F008A5823 /* WDDLoginRegisterView.h */,
+				3E7A099F210F3B9E008A5823 /* WDDLoginRegisterView.m */,
+				3E7A09A2210F3B9F008A5823 /* WDDLoginRegisterView.xib */,
+				3E7A099C210F3B9D008A5823 /* WDDLoginTextField.h */,
+				3E7A09A0210F3B9E008A5823 /* WDDLoginTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -241,6 +291,7 @@
 			children = (
 				3E22C41A20FABFF100FE895E /* WDDMeViewController.h */,
 				3E22C41B20FABFF100FE895E /* WDDMeViewController.m */,
+				3E80771E21114AE700831D53 /* WDDMeViewController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -255,6 +306,9 @@
 		3E22C40720FAB61A00FE895E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3E8077202111587E00831D53 /* WDDCollectionCell.h */,
+				3E8077212111587E00831D53 /* WDDCollectionCell.m */,
+				3E8077222111587E00831D53 /* WDDCollectionCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -344,6 +398,10 @@
 		3E22C42620FAF0EB00FE895E /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				3EC932002110087900A15590 /* UITextField+Placeholder.h */,
+				3EC932012110087A00A15590 /* UITextField+Placeholder.m */,
+				3E7A09AC210F3D5C008A5823 /* UIView+Frame.h */,
+				3E7A09AD210F3D5C008A5823 /* UIView+Frame.m */,
 				3E22C42A20FC2F7F00FE895E /* UIBarButtonItem+item.h */,
 				3E22C42B20FC2F7F00FE895E /* UIBarButtonItem+item.m */,
 				3E22C42820FAF0F500FE895E /* UIImage+image.h */,
@@ -542,9 +600,15 @@
 			files = (
 				3E2951F4210C34BE0089212B /* WDDAdController.xib in Resources */,
 				3E295204210C388D0089212B /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				3E7A099B210F3B7A008A5823 /* WDDLoginRegisterViewController.xib in Resources */,
 				3E92C4E120F998B000523A32 /* LaunchScreen.storyboard in Resources */,
 				3E295206210C388D0089212B /* LaunchImage@2x.png in Resources */,
+				3E80771F21114AE700831D53 /* WDDMeViewController.storyboard in Resources */,
+				3E7A09A6210F3BA0008A5823 /* WDDFastLoginView.xib in Resources */,
+				3E7A0996210F2E5B008A5823 /* WDDFriendTrendViewController.xib in Resources */,
+				3E7A09A9210F3BA0008A5823 /* WDDLoginRegisterView.xib in Resources */,
 				3E295201210C388D0089212B /* LaunchImage-700-568h@2x.png in Resources */,
+				3E8077242111587E00831D53 /* WDDCollectionCell.xib in Resources */,
 				3E295203210C388D0089212B /* LaunchImage-800-667h@2x.png in Resources */,
 				3E295200210C388D0089212B /* LaunchImage-568h@2x.png in Resources */,
 				3E295205210C388D0089212B /* LaunchImage.png in Resources */,
@@ -600,16 +664,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E7A099A210F3B7A008A5823 /* WDDLoginRegisterViewController.m in Sources */,
+				3E7A09AE210F3D5C008A5823 /* UIView+Frame.m in Sources */,
 				3E22C41920FABFB100FE895E /* WDDFriendTrendViewController.m in Sources */,
+				3E7A09A7210F3BA0008A5823 /* WDDLoginRegisterView.m in Sources */,
 				3E22C41320FAB61A00FE895E /* main.m in Sources */,
+				3E7A09A8210F3BA0008A5823 /* WDDLoginTextField.m in Sources */,
 				3E22C43620FC886800FE895E /* WDDSettingController.m in Sources */,
 				3E22C42F20FC4E0100FE895E /* WDDNavigationController.m in Sources */,
 				3E22C41220FAB61A00FE895E /* AppDelegate.m in Sources */,
+				3EC932032110087A00A15590 /* UITextField+Placeholder.m in Sources */,
 				3E078F752105D1C2001E6A04 /* WDDSubTagController.m in Sources */,
+				3E7A09AA210F3BA0008A5823 /* WDDFastLoginButton.m in Sources */,
 				3E22C42C20FC2F7F00FE895E /* UIBarButtonItem+item.m in Sources */,
 				3E22C41C20FABFF100FE895E /* WDDMeViewController.m in Sources */,
 				3E22C41620FABF3E00FE895E /* WDDEssenceViewController.m in Sources */,
 				3E22C41F20FAC01900FE895E /* WDDNewViewController.m in Sources */,
+				3E8077232111587E00831D53 /* WDDCollectionCell.m in Sources */,
 				3E22C42520FAC08800FE895E /* WDDTabBarViewController.m in Sources */,
 				3E22C42220FAC03800FE895E /* WDDPublishViewController.m in Sources */,
 				3E078F792105EEDD001E6A04 /* WDDSubTagCell.m in Sources */,
@@ -617,6 +688,7 @@
 				3E295209210C3DA00089212B /* WDDSubTagItem.m in Sources */,
 				3E22C42920FAF0F500FE895E /* UIImage+image.m in Sources */,
 				3E2951F7210C37200089212B /* WDDAdMode.m in Sources */,
+				3E7A09AB210F3BA0008A5823 /* WDDFastLoginView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

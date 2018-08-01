@@ -103,7 +103,7 @@
     
     //关注
     WDDFriendTrendViewController *vc4=[[WDDFriendTrendViewController alloc]init];
-    vc4.view.backgroundColor=[UIColor blueColor];
+    //vc4.view.backgroundColor=[UIColor blueColor];
     WDDNavigationController *nav4=[[WDDNavigationController alloc]initWithRootViewController:vc4];
     [self addChildViewController:nav4];
     
@@ -111,10 +111,11 @@
 //    nav4.tabBarItem.image=[UIImage imageNamed:@"tabBar_friendTrends_icon"];
 //    nav4.tabBarItem.selectedImage=[UIImage imageOriginalWithName:@"tabBar_friendTrends_click_icon"];
     
-    //我
-    WDDMeViewController *vc5=[[WDDMeViewController alloc]init];
-    vc5.view.backgroundColor=[UIColor orangeColor];
-    WDDNavigationController *nav5=[[WDDNavigationController alloc]initWithRootViewController:vc5];
+    // 我
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"WDDMeViewController" bundle:nil];
+    // 加载箭头指向控制器
+    WDDMeViewController *meVc = [storyboard instantiateInitialViewController];
+    WDDNavigationController *nav5=[[WDDNavigationController alloc]initWithRootViewController:meVc];
     [self addChildViewController:nav5];
     
 //    nav5.tabBarItem.title=@"我";
