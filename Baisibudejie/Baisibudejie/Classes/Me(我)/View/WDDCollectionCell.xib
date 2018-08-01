@@ -43,8 +43,8 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="a1P-oq-bmD"/>
             <connections>
-                <outlet property="iconView" destination="Gh0-3e-qxA" id="bKo-Bn-iYJ"/>
-                <outlet property="nameView" destination="O9c-Ve-v2t" id="DYH-aM-R11"/>
+                <outlet property="iconView" destination="Gh0-3e-qxA" id="cym-bS-Nt8"/>
+                <outlet property="nameView" destination="O9c-Ve-v2t" id="ahR-9q-SVW"/>
             </connections>
             <point key="canvasLocation" x="42" y="101"/>
         </collectionViewCell>

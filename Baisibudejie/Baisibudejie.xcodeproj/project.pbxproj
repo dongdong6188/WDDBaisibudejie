@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3E078F752105D1C2001E6A04 /* WDDSubTagController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E078F742105D1C2001E6A04 /* WDDSubTagController.m */; };
 		3E078F792105EEDD001E6A04 /* WDDSubTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E078F772105EEDD001E6A04 /* WDDSubTagCell.m */; };
+		3E1BDB332111AAE100E73B2E /* WDDSquareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BDB322111AAE100E73B2E /* WDDSquareItem.m */; };
 		3E22C41220FAB61A00FE895E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E22C3F720FAB61A00FE895E /* AppDelegate.m */; };
 		3E22C41320FAB61A00FE895E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E22C40D20FAB61A00FE895E /* main.m */; };
 		3E22C41620FABF3E00FE895E /* WDDEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E22C41520FABF3E00FE895E /* WDDEssenceViewController.m */; };
@@ -57,6 +58,8 @@
 		3E078F742105D1C2001E6A04 /* WDDSubTagController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDDSubTagController.m; sourceTree = "<group>"; };
 		3E078F762105EEDD001E6A04 /* WDDSubTagCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDDSubTagCell.h; sourceTree = "<group>"; };
 		3E078F772105EEDD001E6A04 /* WDDSubTagCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDDSubTagCell.m; sourceTree = "<group>"; };
+		3E1BDB312111AAE100E73B2E /* WDDSquareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDSquareItem.h; sourceTree = "<group>"; };
+		3E1BDB322111AAE100E73B2E /* WDDSquareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDSquareItem.m; sourceTree = "<group>"; };
 		3E22C3F620FAB61A00FE895E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3E22C3F720FAB61A00FE895E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3E22C40D20FAB61A00FE895E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -299,6 +302,8 @@
 		3E22C40620FAB61A00FE895E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3E1BDB312111AAE100E73B2E /* WDDSquareItem.h */,
+				3E1BDB322111AAE100E73B2E /* WDDSquareItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -682,6 +687,7 @@
 				3E22C41F20FAC01900FE895E /* WDDNewViewController.m in Sources */,
 				3E8077232111587E00831D53 /* WDDCollectionCell.m in Sources */,
 				3E22C42520FAC08800FE895E /* WDDTabBarViewController.m in Sources */,
+				3E1BDB332111AAE100E73B2E /* WDDSquareItem.m in Sources */,
 				3E22C42220FAC03800FE895E /* WDDPublishViewController.m in Sources */,
 				3E078F792105EEDD001E6A04 /* WDDSubTagCell.m in Sources */,
 				3E2951F3210C34BE0089212B /* WDDAdController.m in Sources */,

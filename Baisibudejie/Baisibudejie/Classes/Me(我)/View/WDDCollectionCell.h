@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class WDDSquareitem;
 @interface WDDCollectionCell : UICollectionViewCell
-
+@property(nonatomic,strong)WDDSquareitem *item;
 @end
